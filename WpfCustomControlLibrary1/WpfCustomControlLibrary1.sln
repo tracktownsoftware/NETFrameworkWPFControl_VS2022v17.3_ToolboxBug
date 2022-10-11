@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomControlLibrary1", "WpfCustomControlLibrary1\WpfCustomControlLibrary1.csproj", "{F2ED4BF7-52F2-4614-8389-9540E9AE659D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomControlLibrary1.DesignTools", "WpfCustomControlLibrary1.DesignTools\WpfCustomControlLibrary1.DesignTools.csproj", "{3E1CCD12-42EA-4651-9437-87267EB272DA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WpfCustomControlLibrary1Setup", "WPFCustomControlLibrary1Setup\WPFCustomControlLibrary1Setup.vdproj", "{D348A6AE-FD05-4333-9BC3-1E7F62331790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomControlLibrary1.Design", "WpfCustomControlLibrary1.Design\WpfCustomControlLibrary1.Design.csproj", "{B7958993-E688-47C5-BAC4-6427D1970CC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2ED4BF7-52F2-4614-8389-9540E9AE659D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2ED4BF7-52F2-4614-8389-9540E9AE659D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2ED4BF7-52F2-4614-8389-9540E9AE659D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2ED4BF7-52F2-4614-8389-9540E9AE659D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E1CCD12-42EA-4651-9437-87267EB272DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1CCD12-42EA-4651-9437-87267EB272DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1CCD12-42EA-4651-9437-87267EB272DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1CCD12-42EA-4651-9437-87267EB272DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D348A6AE-FD05-4333-9BC3-1E7F62331790}.Debug|Any CPU.ActiveCfg = Debug
+		{D348A6AE-FD05-4333-9BC3-1E7F62331790}.Release|Any CPU.ActiveCfg = Release
+		{B7958993-E688-47C5-BAC4-6427D1970CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7958993-E688-47C5-BAC4-6427D1970CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7958993-E688-47C5-BAC4-6427D1970CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7958993-E688-47C5-BAC4-6427D1970CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D80EB16-1492-434B-87A3-C0F32E854E0F}
+	EndGlobalSection
+EndGlobal
