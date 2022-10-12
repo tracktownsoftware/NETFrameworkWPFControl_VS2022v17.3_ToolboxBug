@@ -22,9 +22,9 @@ namespace WpfCustomControlLibrary.DesignTools
             {
                 AttributeTableBuilder builder = new AttributeTableBuilder();
 
-                // Show controls in toolbox
+                // Specify which controls initialize into the VS2022 toolbox
                 builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl1", new ToolboxBrowsableAttribute(true));
-                //builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new ToolboxBrowsableAttribute(false));
+                builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new ToolboxBrowsableAttribute(false));
 
                 builder.AddCustomAttributes(
                     "WpfCustomControlLibrary.CustomControl1",
