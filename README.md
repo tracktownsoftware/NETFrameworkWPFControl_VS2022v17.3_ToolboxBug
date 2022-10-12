@@ -8,24 +8,15 @@ The BUG: VS2022 v17.3.x includes ALL controls for a custom .NET Framework WPF li
 - WPFCustomControls_VS2019VS2022 - Builds an msi installer that includes WpfCustomControlLibrary, WpfCustomControlLibrary.DesignTools for VS2022, and WpfCustomControlLibrary.Design for VS2019.
 - WPFCustomControls_VS2022 - Builds an msi installer that includes  WpfCustomControlLibrary and only WpfCustomControlLibrary.DesignTools for VS2022. *This is only for targeted testing of VS2022 and DesignTools*
 
-**Note: The above installer projects use the Microsoft Visual Studio Installer Projects 2022 extension**
+**Note: The above installer projects use the Microsoft Visual Studio Installer Projects 2022 extension. For convenience I created installers (setup.exe and WpfCustomControlLibrary.msi) and put them in WPFCustomControls_VS2019VS2022 and WPFCustomControls_VS2022 subfolders in the "Installers" folder. Both installers install to "Program Files (x86)" and make WOW6432Node registry entries.**
 
-The RegisterMetaData class implements Microsoft.VisualStudio.DesignTools.Extensibility.Metadata.IProvideAttributeTable. The bug is VS2022 v17.3.x does not use this code to filter which .NET Framework WPF controls initialize into the VS toolbox."
+The RegisterMetaData class implements Microsoft.VisualStudio.DesignTools.Extensibility.Metadata.IProvideAttributeTable. The bug is VS2022 v17.3.x does not use this code to filter which .NET Framework WPF controls initialize into the VS 2022 toolbox.
 ```
 // Specify which controls initialize into the VS2022 toolbox
 builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl1", new ToolboxBrowsableAttribute(true));
 builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new ToolboxBrowsableAttribute(false));
 ```
 _Update: VS2022 v17.2.7 was pulling this ToolboxBrowsableAttribute information from a Design.dll assembly in our control library intended for VS2019; Microsoft corrected this but still has not added ToolboxBrowsableAttribute support in the DesignTools.dll assembly for VS2022._
-
-This GitHub repo is a work-in-progress. Check back later for improved description and VS2022 toolbox image examples.
-
-In the "Installers" folder I uploaded installers made from installer projects in WpfCustomControlLibrary.sln. Copy the setup.exe and WpfCustomControlLibrary.msi to a test machine from one of the subfolders below:
-1. "WPFCustomControls_VS2019VS2022 x86" has design-time support in VS2019 and VS2022. The old WPF surface in VS2019 uses design.dll and the new WPF surface in VS2022 uses designtools.dll. The library is installed to "Program Files (x86)" and makes WOW6432Node registry entries. To create this installer build WPFCustomControls_VS2019VS2022.vdproj.
-
-
-
-2. "WPFCustomControls_VS2022 x86" has WPF surface design-time support in VS2022 provided by the designtools.dll. The library is installed to "Program Files (x86)" and makes WOW6432Node registry entries. To create this installer build WPFCustomControls_VS2022.vdproj with TargetPlatorm x86.
 
 
 
