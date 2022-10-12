@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WpfCustomControlLibrary1"
+    "\\Installers",
+    "\\Installers\\WPFCustomControls_VS2019VS2022",
+    "\\Installers\\WPFCustomControls_VS2022",
+    "\\WpfCustomControlLibrary",
+    "\\WpfCustomControlLibrary\\WpfCustomControlLibrary.DesignTools"
   ],
-  "SelectedNode": "\\WpfCustomControlLibrary1\\WpfCustomControlLibrary1.sln",
   "PreviewInSolutionExplorer": false
 }
