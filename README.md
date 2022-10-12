@@ -13,7 +13,7 @@ The BUG: VS2022 v17.3.x includes ALL controls for a custom .NET Framework WPF li
 - Both installers install to "Program Files (x86)" and make WOW6432Node registry entries.
 - The Installers folder contains a text file of the registry entries made (it is the same for both installers)
 
-## In WpfCustomControlLibrary.DesignTools the RegisterMetaData class implements Microsoft.VisualStudio.DesignTools.Extensibility.Metadata.IProvideAttributeTable ##
+### In WpfCustomControlLibrary.DesignTools the RegisterMetaData class implements Microsoft.VisualStudio.DesignTools.Extensibility.Metadata.IProvideAttributeTable ###
 The bug is VS2022 v17.3.x does not use this code to filter which .NET Framework WPF controls initialize into the VS 2022 toolbox.
 ```
 // Specify which controls initialize into the VS2022 toolbox
