@@ -17,7 +17,7 @@ builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl1", new Toolbo
 builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new ToolboxBrowsableAttribute(false));
 ```
 
-**To reproduce the bug:**
+# To reproduce the bug:
 1. Copy setup.exe and WpfCustomControlLibrary.msi from one of the installer subfolders to a machine with VS2022 v17.3.x
 2. Run setup.exe
 3. In VS2022 create a WPF App .NET Framework project (for .NET Framework 4.6.2 or 4.7.2)
