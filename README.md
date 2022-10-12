@@ -1,5 +1,5 @@
 # NETFrameworkWPFControl_VS2022v17.3_ToolboxBug
-The BUG: VS2022 v17.3.x includes ALL controls for a custom .NET Framework WPF library in the VS toolbox rather than just DesignTools assembly ToolboxBrowsableAttribute(true) controls. This worked correctly in VS2022 v17.2.7 and earlier.
+The BUG: VS2022 v17.3.x includes ALL controls for a custom .NET Framework WPF library in the VS toolbox rather than controls filtered by the DesignTools assembly using ToolboxBrowsableAttribute(true). This worked correctly in VS2022 v17.2.7 and earlier.
 
 This GitHub repo is a work-in-progress. Check back later for improved description and VS2022 toolbox image examples.
 
