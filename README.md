@@ -18,7 +18,7 @@ builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new Toolbo
 ```
 
 # To reproduce the bug:
-1. Copy setup.exe and WpfCustomControlLibrary.msi from one of the installer subfolders to a machine with VS2022 v17.3.x
+1. Copy setup.exe and WpfCustomControlLibrary.msi from one of the installer subfolders to a clean machine with VS2022 v17.3.x
 2. Run setup.exe
 3. In VS2022 create a WPF App .NET Framework project (for .NET Framework 4.6.2 or 4.7.2)
 4. Show MainWindow.xaml
@@ -27,8 +27,18 @@ builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new Toolbo
 
 ![Image](VS2022v17.3.5_FAIL.png)
 
-_Update: VS2022 v17.2.7 was pulling this ToolboxBrowsableAttribute information from a Design.dll assembly in our control library intended for VS2019; Microsoft corrected this but still has not added ToolboxBrowsableAttribute support in the DesignTools.dll assembly for VS2022._
 
+# We thought this was a regression from VS2022 v17.2.7
+1. Copy setup.exe and WpfCustomControlLibrary.msi from the **Installers\WPFCustomControls_VS2019VS2022** subfolder to a clean machine with **VS2022 v17.2.7**
+2. Run setup.exe
+3. In VS2022 create a WPF App .NET Framework project (for .NET Framework 4.6.2 or 4.7.2)
+4. Show MainWindow.xaml
+5. Open the VS toolbox. The toolbox should initialize with controls from WpfCustomControlLibrary.
+6. SUCCESS (but not really): Only CustomControl1 is in the toolbox!
+
+This is a false success because VS2022 v17.2.7 was actually pulling  ToolboxBrowsableAttribute information from a Design.dll assembly in our control library intended for VS2019; Microsoft corrected this in VS2022 v17.3.x but still has not provided ToolboxBrowsableAttribute support in the DesignTools.dll assembly.
+
+![Image](VS2022v17.2.7_SUCCESS_KindOf.png)
 
 
 
