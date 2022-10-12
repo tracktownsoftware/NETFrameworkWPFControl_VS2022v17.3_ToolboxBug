@@ -25,6 +25,8 @@ builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new Toolbo
 5. Open the VS toolbox. The toolbox should initialize with controls from WpfCustomControlLibrary.
 6. FAIL: Only CustomControl1 should be in the toolbox, but it also contains CustomControl2
 
+![Image](VS2022v17.3.5_FAIL.png)
+
 _Update: VS2022 v17.2.7 was pulling this ToolboxBrowsableAttribute information from a Design.dll assembly in our control library intended for VS2019; Microsoft corrected this but still has not added ToolboxBrowsableAttribute support in the DesignTools.dll assembly for VS2022._
 
 
