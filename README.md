@@ -18,7 +18,7 @@ builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new Toolbo
 ```
 
 # To reproduce the bug:
-1. Copy setup.exe and WpfCustomControlLibrary.msi from one of the installer subfolders to a clean machine with VS2022 v17.3.x
+1. Copy setup.exe and WpfCustomControlLibrary.msi from this repo's Installers/WPFCustomControls_VS2022 folder to a clean machine with VS2022 v17.3.x
 2. Run setup.exe
 3. In VS2022 create a WPF App .NET Framework project (for .NET Framework 4.6.2 or 4.7.2)
 4. Show MainWindow.xaml
@@ -29,7 +29,7 @@ builder.AddCustomAttributes("WpfCustomControlLibrary.CustomControl2", new Toolbo
 
 
 # We thought this was a regression from VS2022 v17.2.7
-1. Copy setup.exe and WpfCustomControlLibrary.msi from the **Installers\WPFCustomControls_VS2019VS2022** subfolder to a clean machine with **VS2022 v17.2.7**
+1. Copy setup.exe and WpfCustomControlLibrary.msi from this repo's Installers/WPFCustomControls_VS2019VS2022 folder to a clean machine with **VS2022 v17.2.7**
 2. Run setup.exe
 3. In VS2022 create a WPF App .NET Framework project (for .NET Framework 4.6.2 or 4.7.2)
 4. Show MainWindow.xaml
