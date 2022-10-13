@@ -9,7 +9,7 @@ The BUG: VS2022 v17.3.x includes ALL controls for a custom .NET Framework WPF li
 - WPFCustomControls_VS2022 - Builds an msi installer that includes  WpfCustomControlLibrary and only WpfCustomControlLibrary.DesignTools for VS2022. *This is only for targeted testing of VS2022 and DesignTools*
 
 **Note: The above installer projects use the Microsoft Visual Studio Installer Projects 2022 extension.** 
-- For convenience I created installers (setup.exe and WpfCustomControlLibrary.msi) and put them in this repo's "Installers" folder 
+- For convenience I created installers (for WPFCustomControls_VS2019VS2022 and WPFCustomControls_VS2022) and put them in this repo's "Installers" folder 
 - Both installers install to "Program Files (x86)" and make WOW6432Node registry entries.
 - The Installers folder contains a text file of the registry entries made (it is the same for both installers)
 
